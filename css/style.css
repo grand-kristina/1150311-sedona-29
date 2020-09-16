@@ -1,0 +1,191 @@
+:root {
+    --basic-black: #000000;
+    --basic-extra-dark: #242424;
+    --basic-dark: #aba9a7;
+    --basic-neutral: #e5e5e5;
+    --basic-extra-light: #f8f5f2;
+    --basic-white: #ffffff;
+
+    --special: #663d15;
+}
+
+body {
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+}
+
+.header {
+    background: #FFFFFF;
+}
+
+.site-navigation a {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.site-navigation li {
+    list-style-type: none;
+}
+
+.short-description h3 {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.short-description p {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.reasons-item-image {
+    background: #81B3D2;
+}
+
+.reasons-item-image h3 {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.reasons-item-image p,
+.reasons-item-image span {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.features {
+    background: #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+.feature-item h3 {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.feature-item p {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.features-list li {
+    list-style-type: none;
+}
+
+.reasons-list {
+    background: #EEEEEE;
+}
+
+.reasons-list li {
+    list-style-type: none;
+}
+
+.reasons-item h3 {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.reasons-item p,
+.reasons-item span {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.short-description {
+    background: #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+.short-description h2 {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.short-description p {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.search-form {
+    background: #766357;
+}
+
+.search-form h3 {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.footer-contacts p,
+.footer-contacts a {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.footer-social li{
+    list-style-type: none;
+}
+
+.footer-copyright {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+}
