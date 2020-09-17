@@ -1,191 +1,117 @@
 :root {
     --basic-black: #000000;
-    --basic-extra-dark: #242424;
+    --basic-extra-dark: #333333;
     --basic-dark: #aba9a7;
-    --basic-neutral: #e5e5e5;
-    --basic-extra-light: #f8f5f2;
+    --basic-neutral: #EEEEEE;
+    --basic-extra-light: #f2f2f2;
     --basic-white: #ffffff;
-
-    --special: #663d15;
+    --basic-blue: #81B3D2;
+    --special: #766357;
+    --color-shadow:rgba(0, 1, 1, 0.2);
+    --background-white:rgba(255, 255, 255, 0.9);
 }
 
 body {
-    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
     text-transform: uppercase;
-    background-color: #f2f2f2;
+    background-color: var(--basic-extra-light);
+    color: var( --basic-extra-dark);
 }
 
 .header {
-    background: #FFFFFF;
+    background-color: var(--basic-white);
 }
 
 .site-navigation a {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: 700;
     line-height: 26px;
-    color: #000000;
+    color:var(--basic-black);
 }
 
-.site-navigation li {
+.site-list li {
     list-style-type: none;
 }
 
 .short-description h3 {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    color: #000000;
+    color: var(--basic-black);
 }
 
 .short-description p {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
     line-height: 26px;
-    color: #333333;
 }
 
 .reasons-item-image {
-    background: #81B3D2;
+    background-color: var(--basic-blue);
 }
 
 .reasons-item-image h3 {
     font-family: PT Sans;
-    font-style: normal;
-    font-weight: bold;
     font-size: 21px;
-    line-height: 21px;
-    color: #FFFFFF;
+    color:var(--basic-white);
 }
 
 .reasons-item-image p,
 .reasons-item-image span {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    color: #FFFFFF;
+    color: var(--basic-white);
 }
 
 .features {
-    background: #FFFFFF;
-    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+    background-color: var(--basic-white);
+    box-shadow: 0px 5px 15px var( --color-shadow);
 }
 
 .feature-item h3 {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: bold;
     font-size: 21px;
-    line-height: 21px;
-    color: #000000;
+    color: var(--basic-black);
 }
 
-.feature-item p {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    color: #333333;
-}
-
-.features-list li {
-    list-style-type: none;
-}
-
-.reasons-list {
-    background: #EEEEEE;
-}
-
-.reasons-list li {
-    list-style-type: none;
+.reasons {
+    background-color: var( --basic-neutral);
 }
 
 .reasons-item h3 {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: bold;
     font-size: 21px;
-    line-height: 21px;
-    color: #000000;
-}
-
-.reasons-item p,
-.reasons-item span {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    color: #333333;
+    color: var(--basic-black);
 }
 
 .short-description {
-    background: #FFFFFF;
-    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+    background: var(--basic-white);
+    box-shadow: 0px 5px 15px var(--color-shadow);
 }
 
 .short-description h2 {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: bold;
     font-size: 30px;
     line-height: 24px;
-    color: #000000;
-}
-
-.short-description p {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    color: #333333;
+    color: var(--basic-black);
 }
 
 .search-form {
-    background: #766357;
+    background: var(--special);
 }
 
 .search-form h3 {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    color: #FFFFFF;
+    color:var(--basic-white);
 }
 
-footer {
-    background: rgba(255, 255, 255, 0.9);
+.main-footer {
+    background-color: var(--background-white);
 }
 
 .footer-contacts p,
 .footer-contacts a {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 21px;
     line-height: 26px;
-    color: #000000;
-}
-
-.footer-social li{
-    list-style-type: none;
+    color:var(--basic-black);
 }
 
 .footer-copyright {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
     line-height: 26px;
-    color: #000000;
+    color: var(--basic-black);
 }
