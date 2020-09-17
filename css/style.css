@@ -2,13 +2,13 @@
     --basic-black: #000000;
     --basic-extra-dark: #333333;
     --basic-dark: #aba9a7;
-    --basic-neutral: #EEEEEE;
+    --basic-neutral: #eeeeee;
     --basic-extra-light: #f2f2f2;
     --basic-white: #ffffff;
-    --basic-blue: #81B3D2;
+    --basic-blue: #81b3d2;
     --special: #766357;
-    --color-shadow:rgba(0, 1, 1, 0.2);
-    --background-white:rgba(255, 255, 255, 0.9);
+    --color-shadow: rgba(0, 1, 1, 0.2);
+    --background-white: rgba(255, 255, 255, 0.9);
 }
 
 body {
@@ -27,10 +27,10 @@ body {
 .site-navigation a {
     font-weight: 700;
     line-height: 26px;
-    color:var(--basic-black);
+    color: var(--basic-black);
 }
 
-.site-list li {
+.site-list {
     list-style-type: none;
 }
 
@@ -49,9 +49,8 @@ body {
 }
 
 .reasons-item-image h3 {
-    font-family: PT Sans;
     font-size: 21px;
-    color:var(--basic-white);
+    color: var(--basic-white);
 }
 
 .reasons-item-image p,
@@ -79,7 +78,7 @@ body {
 }
 
 .short-description {
-    background: var(--basic-white);
+    background-color: var(--basic-white);
     box-shadow: 0px 5px 15px var(--color-shadow);
 }
 
@@ -90,13 +89,13 @@ body {
 }
 
 .search-form {
-    background: var(--special);
+    background-color: var(--special);
 }
 
 .search-form h3 {
     font-size: 21px;
     line-height: 26px;
-    color:var(--basic-white);
+    color: var(--basic-white);
 }
 
 .main-footer {
@@ -108,7 +107,7 @@ body {
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
-    color:var(--basic-black);
+    color: var(--basic-black);
 }
 
 .footer-copyright {
