@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Седона: каталог</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <header class="container">
-        <nav class="menu">
+<body class="page-body">
+    <header class="main-header">
+        <nav class="site-navigation">
             <a href="#">Информация</a>
             <a href="#">Фото и видео</a>
             <a href="index.html" class="logo">
@@ -19,86 +21,85 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container-2">
         <!-- Здесь будет фильтрация -->
         <img src="https://via.placeholder.com/1200x217" alt="Фон">
-        <section>
-            <div>
+        <section class="site-sorting">
+            <div class="found">
                 <p>Найдено: <span>3</span></p>
             </div>
-            <div>
+            <div class="sorting">
                 <p>Сортировка:</p>
-                <ul>
-                    <li><a href="#">По цене</a></li>
-                    <li><a href="#">По типу</a></li>
-                    <li><a href="#">По рейтингу</a></li>
+                <ul class="site-list-2">
+                    <li class="active-link"><a href="#">По цене</a></li>
+                    <li class="off-link"><a href="#">По типу</a></li>
+                    <li class="off-link"><a href="#">По рейтингу</a></li>
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
                 </ul>
             </div>
         </section>
 
-        <ul>
-            <li>
+        <ul class="site-list-2">
+            <li class="hotels">
                 <a href="#"><img src="https://via.placeholder.com/135x90" alt="product1"></a>
                 <a href="">
                     <h3>Amara Resort & Spa</h3>
                 </a>
                 <p>Гостиница</p>
                 <p>От 4000 руб</p>
-                <p>
+                <p class="button-hotels">
                     <a href="">Подробнее</a>
                     <a href="">Забронировать</a>
                 </p>
                 <span>8,5</span>
-                <p>Рейтинг:</p>
+                <p class="rating">Рейтинг:</p>
             </li>
-            <li>
+            <li class="hotels">
                 <a href="#"><img src="https://via.placeholder.com/135x90" alt="product2"></a>
                 <a href="">
                     <h3>Desert Quail Inn</h3>
                 </a>
                 <p>Мотель</p>
                 <p>От 3000 руб</p>
-                <p>
+                <p class="button-hotels">
                     <a href="">Подробнее</a>
                     <a href="">Забронировать</a>
                 </p>
                 <span>8,9</span>
-                <p>Рейтинг:</p>
+                <p class="rating">Рейтинг:</p>
             </li>
-            <li>
+            <li class="hotels">
                 <a href="#"><img src="https://via.placeholder.com/135x90" alt="product3"></a>
                 <a href="">
                     <h3>Villas at Poco Diablo</h3>
                 </a>
                 <p>Апартаменты</p>
                 <p>От 2000 руб</p>
-                <p>
+                <p class="button-hotels">
                     <a href="">Подробнее</a>
                     <a href="">Забронировать</a>
                 </p>
-                 <span>9,2</span>
-                <p>Рейтинг:</p>
+                <span>9,2</span>
+                <p class="rating">Рейтинг:</p>
             </li>
         </ul>
     </main>
 
-    <footer>
-        <section>
+    <footer class="page-footer main-footer">
+        <section class="footer-contacts">
             <p>#visitsedona</p>
             <a href="tel:+74956660166">+7(495) 666-01-66</a>
         </section>
 
-        <section>
-            <ul>
+        <section class="footer-social">
+            <ul class="site-list-2">
                 <li><a href="#">Твиттер</a></li>
                 <li><a href="#">Фейсбук</a></li>
                 <li><a href="#">You Tube</a></li>
             </ul>
         </section>
-
-        <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
+        <p class="footer-copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
     </footer>
 
 </body>

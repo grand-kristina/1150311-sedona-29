@@ -9,6 +9,7 @@
     --special: #766357;
     --color-shadow: rgba(0, 1, 1, 0.2);
     --background-white: rgba(255, 255, 255, 0.9);
+    --basic-grey: #666666;
 }
 
 body {
@@ -17,10 +18,10 @@ body {
     line-height: 21px;
     text-transform: uppercase;
     background-color: var(--basic-extra-light);
-    color: var( --basic-extra-dark);
+    color: var(--basic-extra-dark);
 }
 
-.header {
+.main-header {
     background-color: var(--basic-white);
 }
 
@@ -60,7 +61,7 @@ body {
 
 .features {
     background-color: var(--basic-white);
-    box-shadow: 0px 5px 15px var( --color-shadow);
+    box-shadow: 0px 5px 15px var(--color-shadow);
 }
 
 .feature-item h3 {
@@ -69,7 +70,7 @@ body {
 }
 
 .reasons {
-    background-color: var( --basic-neutral);
+    background-color: var(--basic-neutral);
 }
 
 .reasons-item h3 {
@@ -113,4 +114,58 @@ body {
 .footer-copyright {
     line-height: 26px;
     color: var(--basic-black);
+}
+
+.found p {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+
+.sorting p {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--basic-black);
+}
+
+.site-list-2 {
+    list-style-type: none;
+}
+
+.site-list-2 a {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--basic-black);
+}
+
+.off-link a {
+    opacity: 0.3;
+}
+
+.active-link a {
+    color: var(--basic-blue);
+}
+
+.container-2 {
+    background-color: var(--basic-white);
+}
+
+.button-hotels a:first-child {
+    background-color: var(--basic-blue);
+}
+
+.button-hotels a:last-child {
+    background-color: var(--special);
+}
+
+.button-hotels a {
+    line-height: 21px;
+    font-weight: 700;
+    color: var(--basic-white);
+}
+
+.rating {
+    color: var(--basic-grey);
+    background-color: var(--basic-extra-light);
 }
