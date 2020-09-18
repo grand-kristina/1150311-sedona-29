@@ -129,11 +129,8 @@ body {
     color: var(--basic-black);
 }
 
-.site-list-2 {
-    list-style-type: none;
-}
 
-.site-list-2 a {
+site-list a {
     font-size: 12px;
     line-height: 18px;
     color: var(--basic-black);
@@ -147,19 +144,20 @@ body {
     color: var(--basic-blue);
 }
 
-.container-2 {
+.container-catalog {
     background-color: var(--basic-white);
 }
 
-.button-hotels a:first-child {
+.button-details {
     background-color: var(--basic-blue);
 }
 
-.button-hotels a:last-child {
+.button-reservation {
     background-color: var(--special);
 }
 
-.button-hotels a {
+.button-details a,
+.button-reservation a {
     line-height: 21px;
     font-weight: 700;
     color: var(--basic-white);
