@@ -130,7 +130,7 @@ body {
 }
 
 
-site-list a {
+.sort-list a {
     font-size: 12px;
     line-height: 18px;
     color: var(--basic-black);
