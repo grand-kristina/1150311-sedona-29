@@ -21,14 +21,55 @@ body {
     color: var(--basic-extra-dark);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page {
+    height: 100%;
+}
+
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
 .main-header {
+    position: relative;
     background-color: var(--basic-white);
+    z-index: 1;
+}
+
+.site-navigation {
+    display: grid;
 }
 
 .site-navigation a {
     font-weight: 700;
     line-height: 26px;
     color: var(--basic-black);
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -69px;
+    z-index: 1;
+}
+
+.snowcase img {
+    display: block;
+    width: 458px;
+    height: 352px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 76px;
+    padding-bottom: 80px;
 }
 
 .site-headline {
@@ -39,20 +80,52 @@ body {
 
 .site-list {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-list-reason {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.about {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .short-description h3 {
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
+    margin: 0 0 30px;
 }
 
 .short-description p {
     line-height: 26px;
+    margin: 0;
+}
+
+.reasons {
+    min-height: 256px;
+}
+
+.reasons img {
+    height: inherit;
+}
+
+.photo-rock {
+    float: left;
 }
 
 .reasons-item-image {
     background-color: var(--basic-blue);
+    width: 400px;
+    height: 256px;
+    text-align: center;
+    float: left;
 }
 
 .reasons-item-image h3 {
@@ -70,6 +143,10 @@ body {
     box-shadow: 0px 5px 15px var(--color-shadow);
 }
 
+.feature-item {
+    text-align: center;
+}
+
 .feature-item h3 {
     font-size: 21px;
     color: var(--basic-black);
@@ -84,9 +161,14 @@ body {
     color: var(--basic-black);
 }
 
+.reasons-item {
+    text-align: center;
+}
+
 .short-description {
     background-color: var(--basic-white);
     box-shadow: 0px 5px 15px var(--color-shadow);
+    text-align: center;
 }
 
 .short-description h2 {
@@ -96,17 +178,21 @@ body {
 }
 
 .search-form h3 {
-    background-color: var(--special);
-}
-
-.search-form h3 {
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-white);
+    width: 568px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--special);
+    text-align: center;
 }
 
 .main-footer {
     background-color: var(--background-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 32px 0;
 }
 
 .footer-contacts p,
@@ -120,6 +206,11 @@ body {
 .footer-copyright {
     line-height: 26px;
     color: var(--basic-black);
+}
+
+.footer-social {
+    justify-self: center;
+    text-align: center;
 }
 
 .found p {
