@@ -24,7 +24,8 @@ body {
 .wrapper {
     margin: 0 auto;
     width: 1200px;
-    padding: 0 40px;
+    box-shadow: 0px 5px 15px var(--color-shadow);
+    background-color: var(--basic-white);
 }
 
 img {
@@ -127,9 +128,7 @@ img {
     color: var(--basic-black);
 }
 
-.short-description {
-    background-color: var(--basic-white);
-    box-shadow: 0px 5px 15px var(--color-shadow);
+.short-description {    
     text-align: center;
 }
 
@@ -145,8 +144,8 @@ img {
     color: var(--basic-white);
     background-color: var(--special);
     margin: 0 auto;
-    width: 568px;
-    height: 86px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     text-align: center;
 }
 
