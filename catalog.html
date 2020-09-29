@@ -5,103 +5,120 @@
     <meta charset="UTF-8">
     <title>Седона: каталог</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
-    <header class="main-header">
-        <nav class="site-navigation">
-            <ul class="site-list">
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
-                <li><a href="index.html"><img class="logo" src="img/logo.svg" width="138" height="70" alt="logo">
-                    </a></li>
-                <li><a href="#">Карта штата</a></li>
-                <li><a href="#">Гостиницы</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container-catalog">
-        <!-- Здесь будет фильтрация -->
-        <section class="site-sorting">
-            <div class="found">
-                <p>Найдено: <span>3</span></p>
-            </div>
-            <div class="sorting">
-                <p>Сортировка:</p>
-                <ul class="site-list sort-list">
-                    <li class="active-link"><a href="#">По цене</a></li>
-                    <li class="off-link"><a href="#">По типу</a></li>
-                    <li class="off-link"><a href="#">По рейтингу</a></li>
-                    <li><a href="#" class="arrow-up"></a></li>
-                    <li><a href="#" class="arrow-down"></a></li>
+    <div class="wrapper">
+        <header class="main-header">
+            <a href="index.html">
+                <img class="logo" src="img/logo.svg" width="138" height="70" alt="logo">
+            </a>
+            <nav class="site-navigation">
+                <ul class="site-list site-list-nav">
+                    <li class="nav-list">
+                        <a href="#">Информация</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#">Фото и видео</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#">Карта штата</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#">Гостиницы</a>
+                    </li>
                 </ul>
-            </div>
-        </section>
+            </nav>
+        </header>
 
-        <ul class="site-list">
-            <li class="hotels">
-                <a href="#"><img src="img/amara-hotel.jpg" width="135" height="90" alt="product1"></a>
-                <a href="">
-                    <h3>Amara Resort & Spa</h3>
-                </a>
-                <p>Гостиница</p>
-                <p>От 4000 руб</p>
-                <p>
-                    <a href="" class="button-details">Подробнее</a>
-                    <a href="" class="button-reservation">Забронировать</a>
-                </p>
-                <span>8,5</span>
-                <p class="rating">Рейтинг:</p>
-            </li>
-            <li class="hotels">
-                <a href="#"><img src="img/desert-hotel.jpg" width="135" height="90" alt="product2"></a>
-                <a href="">
-                    <h3>Desert Quail Inn</h3>
-                </a>
-                <p>Мотель</p>
-                <p>От 3000 руб</p>
-                <p>
-                    <a href="" class="button-details">Подробнее</a>
-                    <a href="" class="button-reservation">Забронировать</a>
-                </p>
-                <span>8,9</span>
-                <p class="rating">Рейтинг:</p>
-            </li>
-            <li class="hotels">
-                <a href="#"><img src="img/villas-hotel.jpg" width="135" height="90" alt="product3"></a>
-                <a href="">
-                    <h3>Villas at Poco Diablo</h3>
-                </a>
-                <p>Апартаменты</p>
-                <p>От 2000 руб</p>
-                <p>
-                    <a href="" class="button-details">Подробнее</a>
-                    <a href="" class="button-reservation">Забронировать</a>
-                </p>
-                <span>9,2</span>
-                <p class="rating">Рейтинг:</p>
-            </li>
-        </ul>
-    </main>
+        <main class="container-catalog">
+            <!-- Здесь будет фильтрация -->
+            <section class="site-sorting">
+                <div class="found">
+                    <p>Найдено: <span>3</span></p>
+                </div>
+                <div class="sorting">
+                    <p>Сортировка:</p>
+                    <ul class="site-list sort-list">
+                        <li class="active-link"><a href="#">По цене</a></li>
+                        <li class="off-link"><a href="#">По типу</a></li>
+                        <li class="off-link"><a href="#">По рейтингу</a></li>
+                        <li><a href="#" class="arrow-up"></a></li>
+                        <li><a href="#" class="arrow-down"></a></li>
+                    </ul>
+                </div>
+            </section>
 
-    <footer class="page-footer main-footer">
-        <section class="footer-contacts">
-            <p>#visitsedona</p>
-            <a href="tel:+74956660166">+7(495) 666-01-66</a>
-        </section>
-
-        <section class="footer-social">
             <ul class="site-list">
-                <li class="social-item"><a href="#"><img src="img/twitter.svg" width="20" height="16" alt="Twitter-иконка"></a></li>
-                <li class="social-item"><a href="#"><img src="img/fb-icon.svg" width="20" height="16" alt="Facebook-иконка"></a></li>
-                <li class="social-item"><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube-иконка"></a></li>
+                <li class="hotels">
+                    <a href="#"><img src="img/amara-hotel.jpg" width="135" height="90" alt="product1"></a>
+                    <div class="about-hotels">
+                        <a href="">
+                            <h3>Amara Resort & Spa</h3>
+                        </a>
+                        <p>Гостиница</p>
+                        <p>От 4000 руб</p>
+                        <p>
+                            <a href="" class="button-details">Подробнее</a>
+                            <a href="" class="button-reservation">Забронировать</a>
+                        </p>
+                        <span>8,5</span>
+                        <p class="rating">Рейтинг:</p>
+                    </div>
+                </li>
+                <li class="hotels">
+                    <a href="#"><img src="img/desert-hotel.jpg" width="135" height="90" alt="product2"></a>
+                    <div class="about-hotels">
+                        <a href="">
+                            <h3>Desert Quail Inn</h3>
+                        </a>
+                        <p>Мотель</p>
+                        <p>От 3000 руб</p>
+                        <p>
+                            <a href="" class="button-details">Подробнее</a>
+                            <a href="" class="button-reservation">Забронировать</a>
+                        </p>
+                        <span>8,9</span>
+                        <p class="rating">Рейтинг:</p>
+                    </div>
+                </li>
+                <li class="hotels">
+                    <a href="#"><img src="img/villas-hotel.jpg" width="135" height="90" alt="product3"></a>
+                    <div class="about-hotels">
+                        <a href="">
+                            <h3>Villas at Poco Diablo</h3>
+                        </a>
+                        <p>Апартаменты</p>
+                        <p>От 2000 руб</p>
+                        <p>
+                            <a href="" class="button-details">Подробнее</a>
+                            <a href="" class="button-reservation">Забронировать</a>
+                        </p>
+                        <span>9,2</span>
+                        <p class="rating">Рейтинг:</p>
+                    </div>
+                </li>
             </ul>
-        </section>
-        <p class="footer-copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML-Academy-иконка"></a></p>
-    </footer>
+        </main>
 
+        <footer class="page-footer main-footer">
+            <section class="footer-contacts">
+                <p>#visitsedona</p>
+                <a href="tel:+74956660166">+7(495) 666-01-66</a>
+            </section>
+
+            <section class="footer-social">
+                <ul class="site-list site-list-social">
+                    <li class="social-item"><a href="#"><img src="img/twitter.svg" width="20" height="16" alt="Twitter-иконка"></a></li>
+                    <li class="social-item"><a href="#"><img src="img/fb-icon.svg" width="20" height="16" alt="Facebook-иконка"></a></li>
+                    <li class="social-item"><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube-иконка"></a></li>
+                </ul>
+            </section>
+            <p class="footer-copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML-Academy-иконка"></a></p>
+        </footer>
+    </div>
 </body>
 
 </html>

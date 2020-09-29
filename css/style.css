@@ -128,7 +128,7 @@ img {
     color: var(--basic-black);
 }
 
-.short-description {    
+.short-description {
     text-align: center;
 }
 
@@ -198,6 +198,7 @@ img {
 
 .container-catalog {
     background-color: var(--basic-white);
+
 }
 
 .button-details {
@@ -228,4 +229,18 @@ img {
 
 .site-list-social {
     display: flex;
+}
+
+.hotels {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site-sorting {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-hotels {
+align-items: stretch
 }
