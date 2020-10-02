@@ -73,6 +73,8 @@ img {
 
 .nav-list {
     width: 25%;
+    display: block;
+    padding: 25px 20px;
 }
 
 .site-list-reason {
@@ -219,10 +221,7 @@ img {
 .rating {
     color: var(--basic-grey);
     background-color: var(--basic-extra-light);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: auto;
+    margin-left: 0;
 }
 
 .social-item {
@@ -236,14 +235,10 @@ img {
 }
 
 .site-sorting {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 29px 6% 31px;
+    padding: 29px 73px;
 }
 
 .found {
-    min-width: 135px;
     margin-right: 30px;
 }
 
@@ -257,8 +252,7 @@ img {
 
 .hotels {
     display: flex;
-    flex-direction: row;
-    padding: 25px 6% 30px;   
+    padding: 25px 6% 30px;
 }
 
 .name-hotels {
@@ -267,13 +261,18 @@ img {
     text-decoration: none;
 }
 
+.sorting {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
 .hotels-photo {
     margin-right: 30px;
 }
 
 .hotels-info {
     display: flex;
-    flex-direction: row;
 }
 
 .hotels-type {
@@ -282,5 +281,4 @@ img {
 
 .buttons {
     display: flex;
-    flex-direction: row;
 }
