@@ -17,16 +17,16 @@
             </a>
             <nav class="site-navigation">
                 <ul class="site-list site-list-nav">
-                    <li class="nav-list">
+                    <li class="nav-list nav-list-left-side">
                         <a href="#">Информация</a>
                     </li>
-                    <li class="nav-list">
+                    <li class="nav-list nav-list-left-side">
                         <a href="#">Фото и видео</a>
                     </li>
-                    <li class="nav-list">
+                    <li class="nav-list nav-list-right-side">
                         <a href="#">Карта штата</a>
                     </li>
-                    <li class="nav-list">
+                    <li class="nav-list nav-list-right-side">
                         <a href="catalog.html">Гостиницы</a>
                     </li>
                 </ul>
@@ -81,7 +81,7 @@
                 <div class="reasons-item-image">
                     <h3>Там есть<br> мост дьявола</h3>
                     <span>- №2 -</span>
-                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    <p>Да, по нему можно пройти! Если конечно <br>вы осмелитесь</p>
                 </div>
             </section>
 
@@ -112,33 +112,89 @@
             </section>
 
             <section class="search-form">
-                <h3>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3>
+
                 <!-- Здесь будет форма записи -->
-                
+
                 <img src="img/map.png" width="1199" height="594" alt="Карта">
             </section>
         </main>
 
-        <footer class="page-footer main-footer">
-            <section class="footer-contacts">
+        <footer class="main-footer page-footer">
+            <div class="footer-contacts">
                 <p>#visitsedona</p>
                 <a href="tel:+74956660166">tel: +7(495) 666-01-66</a>
-            </section>
+            </div>
 
-            <section class="footer-social footer-item">
-                <a class="social-btn" href="#"><span class="icon-twitter"><img src="img/twitter.svg" width="17" height="15" alt="Twitter-иконка"></span></a>
-                <a class="social-btn" href="#"><span class="icon-facebook"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook-иконка"></span></a>
-                <a class="social-btn" href="#"><span class="icon-youtube"><img src="img/youtube.svg" width="20" height="16" alt="YouTube-иконка"></span></a>
-            </section>
-            
-            <section class="footer-copyright">
+            <div class="footer-social footer-item">
+                <a class="social-btn" href="#"><img class="icon-btn" src="img/twitter.svg" width="17" height="15" alt="Twitter-иконка"></a>
+                <a class="social-btn" href="#"><img class="icon-btn" src="img/fb-icon.svg" width="12" height="22" alt="Facebook-иконка"></a>
+                <a class="social-btn" href="#"><img class="icon-btn" src="img/youtube.svg" width="20" height="16" alt="YouTube-иконка"></a>
+            </div>
+
+            <div class="footer-copyright">
                 <span>Website by</span>
                 <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-logo">
                     <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML-Academy-иконка">
                 </a>
-            </section>
+            </div>
         </footer>
     </div>
+    <section class="modal">
+        <div class="search">
+            <a class="search-hotels" href="#">Поиск гостиницы в Седоне</a>
+            <div class="search-filters">
+                <form name="calendar" action="#" method="get">
+                    <div class="field-data">
+                        <label for="">Дата заезда:</label>
+                        <div class="">
+                            <input type="text" name="" id="" placeholder="24 июля 2017">
+                            <button class="btn-calendar" type="button">
+                                <span class="icon-calendar"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="field-data">
+                        <label for="">Дата выезда:</label>
+                        <div class="">
+                            <input type="text" name="" id="" placeholder="4 июля 2017">
+                            <button class="btn-calendar" type="button">
+                                <span class="icon-calendar"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="field-people">
+                        <label for="adults">Взрослые:</label>
+                        <div class="">
+                            <div class="">
+                                <button class="btn-minus" type="button">
+                                    <span class="icon-minus"></span>
+                                </button>
+                                <input type="number" name="adults" id="adults" value="2">
+                                <button class="btn-plus" type="button">
+                                    <span class="icon-plus"></span>
+                                </button>
+                            </div>
+                            <div class="children-number">
+                                <label for="children">Дети:</label>
+                                <div class="people-number">
+                                    <button class="btn-minus" type="button">
+                                        <span class="icon-minus"></span>
+                                    </button>
+                                    <input type="number" name="children" id="children" value="0">
+                                    <button class="btn-plus" type="button">
+                                        <span class="icon-plus"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-hotels-btn">
+                        <button class="search-btn" type="submit">Найти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
