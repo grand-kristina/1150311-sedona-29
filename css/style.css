@@ -63,17 +63,7 @@ img {
 }
 
 .site-list-nav {
-    width: 100%;
     display: flex;
-}
-
-.nav-list-left-side {
-    padding-right: 40px;
-}
-
-.nav-list-right-side {
-    text-align: right;
-    padding-left: 40px;
 }
 
 .site-list {
@@ -83,8 +73,11 @@ img {
 }
 
 .nav-list {
+    display: flex;
     width: 25%;
-    padding: 15px 72px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 72px;
 }
 
 .nav-list a {
@@ -119,34 +112,39 @@ img {
 
 .short-description {
     text-align: center;
-    height: 216px;
+    height: 214px;
 }
 
-.short-description h2 {
+.short-description-form {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 120px;
+}
+
+.short-description-form h2 {
     font-size: 30px;
     line-height: 24px;
     color: var(--basic-black);
+    padding-bottom: 10px;
 }
 
-.short-description h3 {
+.about {
+    margin: 0 auto;
+    padding-top: 22px;
+}
+
+.about h3 {
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
 }
 
-.short-description p {
+.about p {
     line-height: 26px;
-    padding-top: 25px;
-}
-
-.about {
-    width: 570px;
-    margin: 0 auto;
-    padding-top: 22px;
+    padding-top: 20px;
 }
 
 .reasons {
-    background-color: var(--basic-neutral);
     display: flex;
     flex-wrap: wrap;
 }
@@ -156,11 +154,18 @@ img {
     width: 400px;
     text-align: center;
     padding-top: 47px;
+    margin-bottom: 6px;
 }
 
 .reasons-item-image h3 {
     font-size: 21px;
     color: var(--basic-white);
+    margin: 0 auto 26px;
+}
+
+.reasons-item-image p {
+    margin-top: 25px;
+    margin-bottom: 0;
 }
 
 .reasons-item-image p,
@@ -192,34 +197,38 @@ img {
 }
 
 .features-item-house::before {
-    top: 0;
-    padding-top: 105px;
-    background: url(../img/housing-icon.svg) no-repeat center;
+    top: 53px;
+    background-image: url(../img/housing-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     width: 75px;
     height: 72px;
 }
 
 .features-item-food::before {
-    background: url(../img/food-icon.svg) no-repeat center;
+    background-image: url(../img/food-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     width: 75px;
     height: 72px;
-    top: 0;
-    padding-top: 104px;
+    top: 53px;
 }
 
 .features-item-souvenirs::before {
     position: absolute;
     content: "";
-    background: url(../img/souvenirs-icon.svg) no-repeat center;
+    background-image: url(../img/souvenirs-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     width: 75px;
     height: 76px;
-    top: 0;
-    padding-top: 100px;
+    top: 50px;
 }
 
 .reasons-item h3 {
     font-size: 21px;
     color: var(--basic-black);
+    margin: auto 0 26px;
 }
 
 .reasons-item-list {
@@ -228,7 +237,7 @@ img {
 
 .reasons-item {
     align-items: center;
-    padding: 40px 40px;
+    padding: 45px 45px;
 }
 
 .site-list-reason {
@@ -357,6 +366,7 @@ img {
 .footer-contacts {
     text-align: center;
     padding-left: 75px;
+    margin-top: -10px;
 }
 
 .footer-contacts p,
@@ -373,19 +383,18 @@ img {
     justify-content: space-between;
     width: 150px;
     align-items: center;
-    padding-left: 126px;
+    padding-left: 130px;
 }
 
 .social-btn {
     position: relative;
-
-    width: 46px;
-    height: 46px;
-    margin: 0;
+    width: 48px;
+    height: 48px;
     text-align: center;
     vertical-align: middle;
     color: var(--basic-white);
     background-color: var(--basic-blue);
+    margin-left: -8px;
 }
 
 .icon-btn {
@@ -405,5 +414,5 @@ img {
 .copyright-logo img {
     display: inline-block;
     vertical-align: middle;
-    padding-left: 5px;
+    padding-left: 6px;
 }
