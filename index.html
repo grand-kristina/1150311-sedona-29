@@ -15,18 +15,18 @@
             <a href="index.html">
                 <img class="logo" src="img/logo.svg" width="138" height="70" alt="logo">
             </a>
-            <nav class="site-navigation">
-                <ul class="site-list site-list-nav">
-                    <li class="nav-list nav-list-left-side">
+            <nav class="main-navigation">
+                <ul class="site-navigation">
+                    <li>
                         <a href="#">Информация</a>
                     </li>
-                    <li class="nav-list nav-list-left-side">
+                    <li>
                         <a href="#">Фото и видео</a>
                     </li>
-                    <li class="nav-list nav-list-right-side">
+                    <li>
                         <a href="#">Карта штата</a>
                     </li>
-                    <li class="nav-list nav-list-right-side">
+                    <li>
                         <a href="catalog.html">Гостиницы</a>
                     </li>
                 </ul>
@@ -109,6 +109,7 @@
             <section class="short-description-form">
                 <h2>Заинтересовались?</h2>
                 <p>Укажите предполагаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                <button class="search-hotels" href="#">Поиск гостиницы в Седоне</button>
             </section>
 
             <section class="search-form">
@@ -121,7 +122,7 @@
 
         <footer class="main-footer page-footer">
             <div class="footer-contacts">
-                <p>#visitsedona</p>
+                <p class="contacts-hashtag">#visitsedona</p>
                 <a href="tel:+74956660166"> ТЕЛ: +7(495) 666-01-66</a>
             </div>
 
@@ -139,60 +140,57 @@
             </div>
         </footer>
     </div>
-    <section class="modal">
-        <div class="search">
-            <a class="search-hotels" href="#">Поиск гостиницы в Седоне</a>
-            <div class="search-filters">
-                <form name="calendar" action="#" method="get">
-                    <div class="field-data">
-                        <label for="">Дата заезда:</label>
+    <section class="modal modal-search">
+        <div class="search-filters">
+            <form name="calendar" action="#" method="get">
+                <div class="field-data">
+                    <label for="">Дата заезда:</label>
+                    <div class="">
+                        <input type="text" name="" id="" placeholder="24 июля 2017">
+                        <button class="btn-calendar" type="button">
+                            <span class="icon-calendar"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="field-data">
+                    <label for="">Дата выезда:</label>
+                    <div class="">
+                        <input type="text" name="" id="" placeholder="4 июля 2017">
+                        <button class="btn-calendar" type="button">
+                            <span class="icon-calendar"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="field-people">
+                    <label for="adults">Взрослые:</label>
+                    <div class="">
                         <div class="">
-                            <input type="text" name="" id="" placeholder="24 июля 2017">
-                            <button class="btn-calendar" type="button">
-                                <span class="icon-calendar"></span>
+                            <button class="btn-minus" type="button">
+                                <span class="icon-minus"></span>
+                            </button>
+                            <input type="number" name="adults" id="adults" value="2">
+                            <button class="btn-plus" type="button">
+                                <span class="icon-plus"></span>
                             </button>
                         </div>
-                    </div>
-                    <div class="field-data">
-                        <label for="">Дата выезда:</label>
-                        <div class="">
-                            <input type="text" name="" id="" placeholder="4 июля 2017">
-                            <button class="btn-calendar" type="button">
-                                <span class="icon-calendar"></span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="field-people">
-                        <label for="adults">Взрослые:</label>
-                        <div class="">
-                            <div class="">
+                        <div class="children-number">
+                            <label for="children">Дети:</label>
+                            <div class="people-number">
                                 <button class="btn-minus" type="button">
                                     <span class="icon-minus"></span>
                                 </button>
-                                <input type="number" name="adults" id="adults" value="2">
+                                <input type="number" name="children" id="children" value="0">
                                 <button class="btn-plus" type="button">
                                     <span class="icon-plus"></span>
                                 </button>
                             </div>
-                            <div class="children-number">
-                                <label for="children">Дети:</label>
-                                <div class="people-number">
-                                    <button class="btn-minus" type="button">
-                                        <span class="icon-minus"></span>
-                                    </button>
-                                    <input type="number" name="children" id="children" value="0">
-                                    <button class="btn-plus" type="button">
-                                        <span class="icon-plus"></span>
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="search-hotels-btn">
-                        <button class="search-btn" type="submit">Найти</button>
-                    </div>
-                </form>
-            </div>
+                </div>
+                <div class="search-hotels-btn">
+                    <button class="search-btn" type="submit">Найти</button>
+                </div>
+            </form>
         </div>
     </section>
 </body>
