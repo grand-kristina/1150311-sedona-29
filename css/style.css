@@ -10,6 +10,10 @@
     --color-shadow: rgba(0, 1, 1, 0.2);
     --background-white: rgba(255, 255, 255, 0.9);
     --basic-grey: #666666;
+    --basic-dark-blue: #5496bd;
+    --basic-light-blue: #88b6d1;
+    --basic-light-grey: #c2c2c2;
+    --basic-light-grey: #a9a9a9
 }
 
 body {
@@ -134,7 +138,7 @@ img {
 
 .short-description-form {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 25px;
 }
 
 .short-description-form p {
@@ -219,7 +223,7 @@ img {
 }
 
 .features-item-house::before {
-    top: 53px;
+    top: 55px;
     background-image: url(../img/housing-icon.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -233,7 +237,7 @@ img {
     background-repeat: no-repeat;
     width: 75px;
     height: 72px;
-    top: 53px;
+    top: 56px;
 }
 
 .features-item-souvenirs::before {
@@ -244,7 +248,7 @@ img {
     background-repeat: no-repeat;
     width: 75px;
     height: 76px;
-    top: 50px;
+    top: 57px;
 }
 
 .reasons-item h3 {
@@ -266,6 +270,8 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+    margin-top: -5px;
+    padding-bottom: -5px;
 }
 
 .found p {
@@ -421,7 +427,6 @@ img {
     vertical-align: middle;
     color: var(--basic-white);
     background-color: var(--basic-blue);
-
 }
 
 .icon-btn {
@@ -447,10 +452,9 @@ img {
 }
 
 
-/*
 .modal-search {
     left: 50%;
-    top: 200px;
+    top: 315px;
     transform: translate(-50%, -50%);
     width: 568px;
     height: 395px;
@@ -458,12 +462,10 @@ img {
     margin: auto;
     color: var(--basic-black);
     z-index: 1;
+    text-align: center;
     background-color: var(--basic-white);
     box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-
 }
-
-*/ 
 
 .search-hotels {
     height: 86px;
@@ -474,7 +476,196 @@ img {
     background-color: var(--special);
     color: var(--basic-white);
     text-transform: uppercase;
-    vertical-align: bottom;
     border: 0;
 }
 
+.intro-search {
+    padding-bottom: 35px;
+    line-height: 24px;
+}
+
+.intro-text-search {
+    font-size: 30px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+
+.search {
+    width: 570px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search-filters {
+    position: absolute;
+    z-index: 100;
+    padding-top: 56px;
+    padding-bottom: 55px;
+    padding-left: 57px;
+    padding-right: 54px;
+    font-weight: 700;
+    line-height: 26px;
+    background-color: var(--basic-white);
+    box-shadow: 0 10px 40px 5px rgba(0, 0, 0, 0.2);
+}
+
+.field-data {
+    margin-bottom: 27px;
+    color: var(--basic-black);
+}
+
+.field-value-data {
+    position: relative;
+    margin-left: 114px;
+    margin-right: 39px;
+}
+
+.field-data label {
+    position: absolute;
+    margin-left: -115px;
+    line-height: 38px;
+}
+
+.field-data input {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    text-transform: uppercase;
+    background-color: var(--basic-extra-light);
+    border: 0;
+}
+
+.field-data input:hover {
+    background-color: var(--basic-extra-light);
+}
+
+.field-data input:focus {
+    background-color: var(--basic-white);
+    outline: 2px solid var(--basic-extra-light);
+}
+
+.btn-calendar {
+    position: absolute;
+    width: 38px;
+    height: 40px;
+    margin-left: 305px;
+    padding: 0;
+    background-image: url(../img/calendar.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--basic-light-grey);
+    background-color: var(--basic-extra-light);
+    border: 0;
+}
+
+.btn-calendar:hover {
+    color: var(--basic-black);
+}
+
+.btn-calendar:active {
+    color: var(--basic-blue);
+}
+
+.btn-people-number {
+    width: 38px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    color: var(--basic-light-grey);
+    background-color: var(--basic-extra-light);
+    border: 0;
+    outline: 0;
+}
+
+.btn-people-number:hover {
+    color: var(--basic-black);
+}
+
+.btn-people-number:active {
+    color: var(--basic-blue);
+}
+
+.people-number input,
+.children-number input {
+    width: 38px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--basic-extra-light);
+    border: 0;
+    outline: 0;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0px;
+}
+
+.field-people {
+    margin-bottom: 54px;
+}
+
+.field-people > label {
+    line-height: 38px;
+}
+
+.field-value-people {
+    height: 40px;
+    margin-left: 114px;
+    text-align: left;
+}
+
+.btn-plus {
+    margin-left: -4px;
+}
+
+.btn-minus {
+    margin-right: -4px;
+}
+
+.people-number-adults {
+    margin-left: -115px;
+   
+}
+
+.people-number-children {
+/*
+    display: inline-block;
+    margin-left: -180px;
+*/
+}
+
+.people-number {
+     display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.search-btn {
+    width: 458px;
+    height: 58px;
+    padding: 0;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+    border: 0;
+    outline: 0;
+}
+
+.search-btn:hover {
+    background-color: var(--basic-dark-blue);
+}
+
+.search-btn:active {
+    color: var(--basic-light-blue);
+    background-color: var(--basic-dark-blue);
+}
