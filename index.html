@@ -49,10 +49,10 @@
             <section class="reasons">
                 <div class="reasons-item-image">
                     <h3>Настоящий <br>городок</h3>
-                    <span>- №1 -</span>
+                    <span>— №1 —</span>
                     <p>Седона - не атракцион для туристов, там <br>течёт своя жизнь</p>
                 </div>
-                <div>
+                <div class="reasons-image">
                     <img src="img/hotel-main.jpg" width="800" height="256" alt="Sedona-photo">
                 </div>
             </section>
@@ -75,12 +75,12 @@
             </section>
 
             <section class="reasons">
-                <div>
+                <div class="reasons-image">
                     <img class="photo-rock" src="img/rock-main.jpg" width="800" height="256" alt="Sedona-photo">
                 </div>
                 <div class="reasons-item-image">
                     <h3>Там есть<br> мост дьявола</h3>
-                    <span>- №2 -</span>
+                    <span>— №2 —</span>
                     <p>Да, по нему можно пройти! Если конечно <br>вы осмелитесь</p>
                 </div>
             </section>
@@ -89,37 +89,73 @@
                 <ul class="site-list site-list-reason">
                     <li class="reasons-item">
                         <h3>Небольшая <br>площадь</h3>
-                        <span>- №3 -</span>
+                        <span>— №3 —</span>
                         <p>Все достопримечательности <br>находятся очень близко</p>
 
                     </li>
                     <li class="reasons-item">
                         <h3>Красивая <br>дорога</h3>
-                        <span>- №4 -</span>
+                        <span>— №4 —</span>
                         <p>Ехать в седону из лас-вегаса совсем <br>не скучно!</p>
                     </li>
                     <li class="reasons-item">
                         <h3>Мало <br>туристов</h3>
-                        <span>- №5 -</span>
+                        <span>— №5 —</span>
                         <p>Большинство едет в гранд каньон <br>и толпится там</p>
                     </li>
                 </ul>
             </section>
 
-            <section class="short-description-form">
-                <h2>Заинтересовались?</h2>
-                <p>Укажите предполагаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                <button class="search-hotels" href="#">Поиск гостиницы в Седоне</button>
-            </section>
+            <div class="desc-text">
+                <h3 class="desc-title">
+                    Заинтересовались?
+                </h3>
+                <p class="benefits-text">
+                    Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне.
+                </p>
+            </div>
+            <div class="search">
+                <button type="button" class="button-search">Поиск гостиницы в Седоне</button>
+                <section class="modal">
+                    <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="post">
+                        <div class="search-form-checkin">
+                            <button class="search-button" type="button"></button>
+                            <label class="search-label" for="arrival">Дата заезда:</label>
+                            <input class="search-input" name="arrival" id="arrival" type="text" value="24 апреля 2017">
+                        </div>
+                        <div class="search-form-checkout">
+                            <button class="search-button" type="button">
+                            </button>
+                            <label class="search-label" for="departure">Дата выезда:</label>
+                            <input class="search-input" type="text" name="departure" id="departure" value="4 июля 2017">
+                        </div>
+                        <div class="search-form-people">
+                            <div class="search-form-adult">
+                                <button class="search-button search-button-minus" type="button">
+                                </button>
+                                <button class="search-button search-button-plus" type="button">
+                                </button>
+                                <label class="search-label" for="adult">Взрослые:</label>
+                                <input class="search-input search-input-people" name="adult" type="text" id="adult" value="2">
+                            </div>
+                            <div class="search-form-kids">
+                                <button class="search-button search-button-minus" type="button">
+                                </button>
+                                <button class="search-button search-button-plus" type="button">
+                                </button>
+                                <label class="search-label" for="kids">Дети:</label>
+                                <input class="search-input search-input-people" type="text" name="kids" id="kids" value="0">
+                            </div>
+                        </div>
+                        <button type="button" class="button button-form">Найти</button>
+                    </form>
+                </section>
+            </div>
 
-            <section class="search-form">
-
-                <!-- Здесь будет форма записи -->
-
-                <img src="img/map.png" width="1199" height="594" alt="Карта">
+            <section class="map">
+                <img class="map-img" src="img/map.png" width="1199" height="593" alt="Карта расположения города Седоны">
             </section>
         </main>
-
         <footer class="main-footer page-footer">
             <div class="footer-contacts">
                 <p class="contacts-hashtag">#visitsedona</p>
@@ -131,7 +167,6 @@
                 <a class="social-btn" href="#"><img class="icon-btn" src="img/fb-icon.svg" width="12" height="22" alt="Facebook-иконка"></a>
                 <a class="social-btn" href="#"><img class="icon-btn" src="img/youtube.svg" width="20" height="16" alt="YouTube-иконка"></a>
             </div>
-
             <div class="footer-copyright">
                 <span>Website by</span>
                 <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-logo">
@@ -140,61 +175,7 @@
             </div>
         </footer>
     </div>
-    <section class="modal modal-search">
-        <div class="search">
-            <div class="search-filters">
-                <form name="calendar" action="#" method="get">
-                    <div class="field-data clearfix">
-                        <div class="field-value-data">
-                            <label for="arrival-data">Дата заезда:</label>
-                            <button class="btn-calendar" type="button">
-                                <span class="icon-calendar"></span>
-                            </button>
-                            <input type="text" name="arrival-data" id="arrival-data" placeholder="24 апреля 2017">
-                        </div>
-                    </div>
-                    <div class="field-data clearfix">
-                        <div class="field-value-data">
-                            <label for="departure-data">Дата выезда:</label>
-                            <button class="btn-calendar" type="button">
-                                <span class="icon-calendar"></span>
-                            </button>
-                            <input type="text" name="departure-data" id="departure-data" placeholder="4 июля 2017">
-                        </div>
-                    </div>
-                    <div class="field-people cleaffix">
-                        <div class="field-value-people">
-                            <div class="people-number people-number-adults">
-                               <label for="adults">Взрослые:</label>
-                                <button class="btn-minus btn-people-number" type="button">
-                                    <span class="icon-minus"></span>
-                                </button>
-                                <input type="number" name="adults-guests" id="adults" value="2">
-                                <button class="btn-plus btn-people-number" type="button">
-                                    <span class="icon-plus"></span>
-                                </button>
-                            </div>
-                            <div class="children-number">
-                                <div class="people-number people-number-children">
-                                   <label for="children">Дети:</label>
-                                    <button class="btn-minus btn-people-number" type="button">
-                                        <span class="icon-minus"></span>
-                                    </button>
-                                    <input type="number" name="children-guests" id="children" value="0">
-                                    <button class="btn-plus btn-people-number" type="button">
-                                        <span class="icon-plus"></span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="search-hotels-btn">
-                        <button class="search-btn" type="submit">Найти</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
