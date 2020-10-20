@@ -27,7 +27,7 @@
                         <a href="#">Карта штата</a>
                     </li>
                     <li>
-                        <a href="#">Гостиницы</a>
+                        <a class="link-active-here" href="#">Гостиницы</a>
                     </li>
                 </ul>
             </nav>
@@ -74,15 +74,25 @@
                             </fieldset>
                         </div>
                         <div class="right-column">
-                            <fieldset class="cost-filter">
-                                <legend>Стоимость в сутки (Р):</legend>
-                                <input class="cost-filter-from" name="input-from" placeholder="от 0">
-                                <span class="input-divider__span"></span>
-                                <input class="cost-filter-till" name="input-till" placeholder="до 3000">
-                                <span class="cost-filter-bar__span">
-                                    <input type="range" name="price-range" min="0" max="3000" value="2000">
-                                </span>
-                                <button class="button-view">Показать</button>
+                            <fieldset class="rent-form">
+                                <legend class="rent-form__title h4">Стоимость в сутки (Р):</legend>
+
+                                <div class="range-field">
+                                    <input class="range-field-input" type="text" name="min-price" value="от 0">
+                                    <input class="range-field-input" type="text" name="max-price" value="до 3000">
+                                </div>
+
+                                <div class="range-slider">
+                                    <div class="range-slider-scale">
+                                        <div class="range-slider-bar"></div>
+                                    </div>
+                                    <div class="range-slider-toggle range-slider-toggle-min" tabindex="0"></div>
+                                    <div class="range-slider-toggle range-slider-toggle-max" tabindex="0"></div>
+                                </div>
+
+                                <div class="rent-form-button">
+                                    <button class="button-view">Показать</button>
+                                </div>
                             </fieldset>
                         </div>
                     </div>
@@ -99,11 +109,22 @@
                         <li><a href="#" class="links">По рейтингу</a></li>
                     </ul>
                     <ul class="sorting-order">
-                        <li><a class="sorting-order-arrow" href="#" aria-label="По возрастанию"></a></li>
-                        <li><a class="sorting-order-arrow active-link" aria-label="По убыванию"></a></li>
+                        <div class="buttons-direction">
+                            <button class="direction direction-up" type="button">
+                                <svg aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 0L0 10H11L5.5 0Z" fill="#cacaca" />
+                                </svg>
+                            </button>
+                            <button class="direction direction-down" type="button">
+                                <svg aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#cacaca" />
+                                </svg>
+                            </button>
+                        </div>
                     </ul>
                 </div>
             </section>
+
             <section class="hotels-list">
                 <article class="hotel-item">
                     <h3 class="hotel-name"><a href="#" class="links">Amara Resort & Spa</a></h3>
