@@ -442,11 +442,11 @@ img {
     right: 7px;
 }
 
-.modal-icon:hover svg {
+.modal-icon:hover {
     fill: var(--basic-black);
 }
 
-.modal-icon:active svg {
+.modal-icon:active {
     fill: var(--basic-blue);
 }
 
@@ -803,11 +803,10 @@ input::-webkit-input-placeholder {
 .buttons-direction {
     margin-left: auto;
     display: flex;
-    justify-content: flex-end;
-    margin-top: 7px;
 }
 
 .direction {
+    margin-top: 10px;
     background-color: transparent;
     border: 0;
     outline: 0;
@@ -819,6 +818,10 @@ input::-webkit-input-placeholder {
 
 .direction:active svg {
     fill: var(--basic-blue);
+}
+
+.direction-up {
+    margin-right: 12px;
 }
 
 .direction-up svg {
