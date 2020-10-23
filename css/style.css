@@ -213,7 +213,8 @@ img {
 
 .about p {
     line-height: 26px;
-    padding-top: 20px;
+    padding-top: 25px;
+    margin-bottom: 10px;
 }
 
 .reasons {
@@ -234,7 +235,7 @@ img {
 .reasons-item-image h3 {
     font-size: 21px;
     color: var(--basic-white);
-    margin: 0 auto 26px;
+    margin: 0 auto 25px;
 }
 
 .reasons-item-image p {
@@ -434,7 +435,7 @@ img {
     border: none;
     width: 346px;
     box-sizing: border-box;
-    padding: 6px 7px 6px 12px;
+    padding: 6px 7px 6px 15px;
 }
 
 
@@ -449,7 +450,7 @@ img {
 
 .modal-icon {
     position: absolute;
-    right: 7px;
+    right: 10px;
 }
 
 .modal-icon:hover {
