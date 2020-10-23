@@ -84,6 +84,15 @@ img {
     padding: 0;
 }
 
+.visually-hidden {
+   position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
 /*   Header   */
 
 .main-header {
@@ -1114,7 +1123,6 @@ input::-webkit-input-placeholder {
     width: 150px;
     align-items: center;
     padding-left: 125px;
-    padding-top: 5px;
 }
 
 .social-btn {
@@ -1150,7 +1158,6 @@ input::-webkit-input-placeholder {
     display: inline-block;
     vertical-align: middle;
     padding-left: 4px;
-    padding-bottom: 7px;
 }
 
 .copyright-logo:hover svg {
