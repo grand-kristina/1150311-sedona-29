@@ -416,15 +416,18 @@ img {
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
+    padding-bottom: -1px;
+    margin-top: 1px;
 }
 
 .modal-label-text {
     font-weight: 700;
-    width: 110px;
+    width: 112px;
     text-align: left;
     order: -1;
-    margin-top: 5px;
+    padding-bottom: 3px;
+    /* margin-top: -3px; */
 }
 
 .label-text-children {
@@ -433,12 +436,12 @@ img {
 }
 
 .modal-field {
-    height: 36px;
+    height: 37px;
     background-color: var(--basic-extra-light);
     border: none;
     width: 346px;
     box-sizing: border-box;
-    padding: 6px 7px 6px 15px;
+    padding: 6px 20px 9px 13px;
 }
 
 
@@ -468,7 +471,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: left;
-    margin-bottom: 58px;
+    margin-bottom: 52px;
     /* margin-top: 4px; */
 }
 
@@ -515,6 +518,8 @@ input::-webkit-input-placeholder {
     width: 38px;
     height: 38px;
     padding: 0;
+    /* margin-bottom: -3px; */
+    /* padding-bottom: 9px; */
 }
 
 .button-modal:hover svg,
@@ -528,11 +533,11 @@ input::-webkit-input-placeholder {
 }
 
 .button-minus {
-    margin: 22px auto;
+    margin: 17px auto;
 }
 
 .button-plus {
-    margin: 18px auto;
+    margin: 13px auto;
 }
 
 .find-button {
@@ -542,7 +547,7 @@ input::-webkit-input-placeholder {
     text-transform: uppercase;
     background-color: var(--basic-blue);
     color: var(--basic-white);
-    padding: 15px 196px;
+    padding: 16px 196px;
 }
 
 .find-button:hover {
@@ -1062,7 +1067,6 @@ input::-webkit-input-placeholder {
 .star::before {
     content: "";
     position: absolute;
-    top: 6px;
     left: 7px;
     width: 18px;
     height: 17px;
