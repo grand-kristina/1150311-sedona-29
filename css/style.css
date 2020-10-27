@@ -395,11 +395,15 @@ img {
 
 
 .offer {
+    display: none;
     position: relative;
     background: var(--basic-white);
     text-align: center;
 }
 
+.offer-open {
+    display: block;
+}
 
 .modal-open {
     position: absolute;
@@ -518,8 +522,6 @@ input::-webkit-input-placeholder {
     width: 38px;
     height: 38px;
     padding: 0;
-    /* margin-bottom: -3px; */
-    /* padding-bottom: 9px; */
 }
 
 .button-modal:hover svg,
@@ -1056,7 +1058,7 @@ input::-webkit-input-placeholder {
 .stars-rating {
     display: flex;
     justify-content: flex-end;
-    vertical-align:  top;
+    vertical-align: top;
 }
 
 .star {
