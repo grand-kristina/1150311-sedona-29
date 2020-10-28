@@ -59,7 +59,7 @@ img {
     height: auto;
 }
 
-.logo {
+.site-logo {
     position: absolute;
     top: 0;
     left: 50%;
@@ -420,8 +420,7 @@ img {
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 31px;
-    padding-bottom: -1px;
+    margin-bottom: 29px;
     margin-top: 1px;
 }
 
@@ -430,8 +429,7 @@ img {
     width: 112px;
     text-align: left;
     order: -1;
-    padding-bottom: 3px;
-    /* margin-top: -3px; */
+    padding-bottom: -1px;
 }
 
 .label-text-children {
@@ -440,27 +438,34 @@ img {
 }
 
 .modal-field {
-    height: 37px;
     background-color: var(--basic-extra-light);
     border: none;
     width: 346px;
     box-sizing: border-box;
-    padding: 6px 20px 9px 13px;
+    padding: 4px 16px 4px 11px;
+    border: 2px solid transparent;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: var(--basic-black);
 }
 
+.modal-field::-webkit-input-placeholder,
+.modal-number-input::-webkit-input-placeholder {
+    color: var(--basic-black);
+}
 
 .modal-field:hover {
     background-color: var(--basic-ultra-light);
 }
 
 .modal-field:focus {
-    border: 2px solid var(--basic-light-middle-grey);
+    border-color: var(--basic-light-middle-grey);
     background-color: var(--basic-white);
 }
 
 .modal-icon {
     position: absolute;
-    right: 10px;
 }
 
 .modal-icon:hover {
@@ -475,8 +480,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: left;
-    margin-bottom: 52px;
-    /* margin-top: 4px; */
+    margin-bottom: 55px;
 }
 
 .modal-wrapper-buttons {
@@ -508,13 +512,6 @@ img {
     background-color: var(--basic-white);
 }
 
-input::-webkit-input-placeholder {
-    font-weight: 700;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: var(--basic-black);
-}
-
 .button-modal {
     border: none;
     outline: none;
@@ -522,6 +519,25 @@ input::-webkit-input-placeholder {
     width: 38px;
     height: 38px;
     padding: 0;
+    border: 1px solid transparent;
+}
+
+.button-modal:focus {
+    border-color: var(--basic-blue);
+}
+
+.button-modal-calendar {
+    border: none;
+    outline: none;
+    padding: 0;
+    border: 1px solid transparent;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.button-modal-calendar:focus {
+    border-color: var(--basic-blue);
 }
 
 .button-modal:hover svg,
@@ -535,11 +551,11 @@ input::-webkit-input-placeholder {
 }
 
 .button-minus {
-    margin: 17px auto;
+    margin: 19px auto;
 }
 
 .button-plus {
-    margin: 13px auto;
+    margin: 14px auto;
 }
 
 .find-button {
@@ -680,6 +696,7 @@ input::-webkit-input-placeholder {
 
 .filter-item input[type="checkbox"]:focus + label {
     font-weight: 700;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .options-price {
@@ -739,13 +756,10 @@ input::-webkit-input-placeholder {
 .price-controls .max-price {
     width: 90px;
     padding-left: 61px;
-    /* margin-bottom: 17px; */
 }
 
 .price-controls input {
     width: 50px;
-    /* height: 34px; */
-    /* margin: 0; */
     color: var(--basic-white);
     background: none;
     border: none;
@@ -772,7 +786,7 @@ input::-webkit-input-placeholder {
     top: -9px;
     width: 4px;
     height: 4px;
-    background-color: var(--basic-white);
+    background-color: var(--basic-dark);
     border: 8px solid var(--basic-white);
     border-radius: 50%;
     -webkit-box-shadow: 0 2px 1px 0 var(--opacity-shadow);
@@ -830,8 +844,6 @@ input::-webkit-input-placeholder {
     margin-top: 10px;
     margin-right: 2px;
     background-color: transparent;
-    border: 0;
-    outline: 0;
 }
 
 .direction:hover svg {
@@ -1158,7 +1170,8 @@ input::-webkit-input-placeholder {
 .copyright-logo {
     display: inline-block;
     vertical-align: middle;
-    padding-left: 4px;
+    margin-left: 4px;
+    transform: translateY(3px);
 }
 
 .copyright-logo:hover svg {
