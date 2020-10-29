@@ -405,6 +405,10 @@ img {
     display: block;
 }
 
+.map iframe {
+    border: 0;
+}
+
 .modal-open {
     position: absolute;
     background-color: var(--basic-white);
@@ -462,10 +466,6 @@ img {
 .modal-field:focus {
     border-color: var(--basic-light-middle-grey);
     background-color: var(--basic-white);
-}
-
-.modal-icon {
-    position: absolute;
 }
 
 .modal-icon:hover {
@@ -532,8 +532,10 @@ img {
     padding: 0;
     border: 1px solid transparent;
     position: absolute;
-    right: 30px;
-    bottom: 30px;
+    right: 1px;
+    background-color: transparent;
+    width: 38px;
+    height: 38px;
 }
 
 .button-modal-calendar:focus {
