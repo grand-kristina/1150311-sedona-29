@@ -416,10 +416,6 @@ img {
     padding: 55px;
 }
 
-.modal-close {
-    display: none;
-}
-
 .modal-label {
     position: relative;
     display: flex;
@@ -436,6 +432,10 @@ img {
     padding-bottom: -1px;
 }
 
+.arrival {
+    margin-right: 4px;
+}
+
 .label-text-children {
     width: 65px;
     margin-left: 54px;
@@ -446,6 +446,7 @@ img {
     border: none;
     width: 346px;
     box-sizing: border-box;
+    margin-left: 17px;
     padding: 4px 16px 4px 11px;
     border: 2px solid transparent;
     font-weight: 700;
@@ -774,7 +775,7 @@ img {
 
 .range-controls .scale {
     height: 2px;
-    background: var(--background-white);
+    background: var(--background-grey);
 }
 
 .range-controls .bar {
@@ -1073,25 +1074,25 @@ img {
     display: flex;
     justify-content: flex-end;
     vertical-align: top;
-}
-
-.star {
-    position: relative;
-    padding-left: 24px;
-}
-
-.star::before {
-    content: "";
-    position: absolute;
-    left: 7px;
-    width: 18px;
-    height: 17px;
     background-image: url(../img/star.svg);
-    background-repeat: no-repeat;
+    background-repeat: space;
+    height: 20px;
 }
 
 .buttons {
     display: flex;
+}
+
+.star-1 {
+    margin-left: 20px;
+}
+
+.star-2 {
+    margin-left: 46px;
+}
+
+.star-3 {
+    margin-left: 71px;
 }
 
 /*   Footer   */
