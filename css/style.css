@@ -159,6 +159,7 @@ img {
 .site-headline {
     background-image: url(../img/background-sedona.jpg);
     padding-bottom: 75px;
+    background-color: var(--dark-special);
     text-align: center;
     display: block;
     position: relative;
@@ -405,8 +406,20 @@ img {
     display: block;
 }
 
+.offer-show {
+    animation-name: show;
+    animation-duration: 1.2s;
+}
+
+.offer-error {
+    animation-name: error;
+    animation-duration: 1s;
+}
+
 .map iframe {
     border: 0;
+    position: absolute;
+    display: block;
 }
 
 .modal-open {
@@ -414,6 +427,7 @@ img {
     background-color: var(--basic-white);
     box-shadow: 0px 7px 15px var(--shadow-form);
     padding: 55px;
+    z-index: 1;
 }
 
 .modal-label {
@@ -590,6 +604,7 @@ img {
     background-image: url("../img/filter-background.jpg");
     background-repeat: no-repeat;
     min-height: 217px;
+    background-color: var(--dark-special);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1183,4 +1198,50 @@ img {
 
 .copyright-logo:active svg {
     fill: var(--transparent-black);
+}
+
+@keyframes error {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes show {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateY(-5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateY(5px);
+    }
 }
